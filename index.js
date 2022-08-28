@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 const generatePage = require("./src/page-template.js");
-const fs = require("fs");
+const writeFile = require("./utils/generate-readme.js");
 
 const promptUser = () => {
   return inquirer.prompt([
@@ -132,10 +132,14 @@ const promptUser = () => {
 
 promptUser()
   .then(templateData => {
-    const pageMarkdown = generatePage(templateData);
-
-    fs.writeFile('./README.md', pageMarkdown, err => {
-      if (err) throw new Error(err);
-      console.log('Your professional README has been created!');
-    });
+    return generatePage(templateData);
+  })
+  .then(pageMarkdown => {
+    return writeFile(pageMarkdown);
+  })
+  .then(writeFileResponse => {
+    console.log(writeFileResponse.message);
+  })
+  .catch(err => {
+    console.log(err);
   });

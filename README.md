@@ -1,8 +1,8 @@
 
-  # My Project
+  # Jacob Canepa's ReadMe Generator
 
   ## Description
-  this is my first project
+  A command line application that generates a professional readme based on user's input.
 
   ## Table of Contents
   - [Installation](#installation)
@@ -13,19 +13,19 @@
   - [Questions](#questions)
 
   ## Installation
-  just clone the repo I think that should do the trick?
+  npm i inquirer@8.2.4
 
   ## Usage
-  Use wisely
+  To get started just type the command "node index" in the root directory's terminal...
 
   ## License
-  GNU
+  undefined
 
   ## Contributing
-  don't help
+  N/A
 
   ## Tests
-  figure it out
+  N/A
 
   ## Questions
   Github: https://github.com/jacobmcanepa
