@@ -13,7 +13,7 @@ module.exports = fileContent => {
       // if everything went well, resolve the Promise and send the successful data to the `.then()` method
       resolve({
         ok: true,
-        message: 'File created!'
+        message: 'File created! Check out the "dist" folder.'
       });
     });
   });
