@@ -84,7 +84,7 @@ const promptUser = () => {
       type: 'checkbox',
       name: 'license',
       message: 'Please choose a license',
-      choices: ['GNU', 'Apache', 'Ms-PL', 'BSD', 'CDDL', 'EPL', 'MIT']
+      choices: ['GNU', 'Apache', 'Ms-PL', 'BSD', 'CDDL', 'EPL', 'MIT'],
     },
     {
       type: 'input',
@@ -113,7 +113,7 @@ const promptUser = () => {
         if (input) {
           return true;
         } else {
-          console.log('Please enter a description!');
+          console.log('Please enter an email address!');
           return false;
         }
       },
