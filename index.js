@@ -1,4 +1,6 @@
 const inquirer = require("inquirer");
+const generatePage = require("./src/page-template.js");
+const fs = require("fs");
 
 const promptUser = () => {
   return inquirer.prompt([
@@ -83,7 +85,7 @@ const promptUser = () => {
     {
       type: 'checkbox',
       name: 'license',
-      message: 'Please choose a license',
+      message: 'Please choose a license:',
       choices: ['GNU', 'Apache', 'Ms-PL', 'BSD', 'CDDL', 'EPL', 'MIT'],
     },
     {
@@ -129,4 +131,11 @@ const promptUser = () => {
 };
 
 promptUser()
-  .then(answers => console.log(answers));
+  .then(templateData => {
+    const pageMarkdown = generatePage(templateData);
+
+    fs.writeFile('./README.md', pageMarkdown, err => {
+      if (err) throw new Error(err);
+      console.log('Your professional README has been created!');
+    });
+  });
