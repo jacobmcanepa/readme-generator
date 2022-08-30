@@ -16,18 +16,12 @@
   ```
   npm i inquirer@8.2.4
   ```
+  See walkthrough for more details
 
   ## Usage
   To get started just type the command "node index" in the root directory's terminal...
-
-  ## License
-  undefined
-
-  ## Contributing
-  N/A
-
-  ## Tests
-  N/A
+  
+  Walkthrough video:
 
   ## Questions
   Github: https://github.com/jacobmcanepa
