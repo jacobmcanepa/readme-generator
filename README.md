@@ -13,7 +13,9 @@
   - [Questions](#questions)
 
   ## Installation
+  ```
   npm i inquirer@8.2.4
+  ```
 
   ## Usage
   To get started just type the command "node index" in the root directory's terminal...
