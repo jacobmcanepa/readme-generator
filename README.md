@@ -2,7 +2,7 @@
   # Jacob Canepa's ReadMe Generator
 
   ## Description
-  A command line application that generates a professional readme based on user's input.
+  A command line application that generates a professional readme based on user's input using the Inquirer NPM package.
 
   ## Table of Contents
   - [Installation](#installation)
