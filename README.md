@@ -12,7 +12,7 @@
   ## Installation
   PLEASE fork repo before cloning!
   ```
-  npm i inquirer@8.2.4
+  npm install
   ```
   See walkthrough for more details...
 
